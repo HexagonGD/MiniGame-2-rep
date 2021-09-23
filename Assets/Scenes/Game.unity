@@ -662,7 +662,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e8f1f7cff492f14a97efab237bbb9bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _rewardList: 000000000100000001000000010000000200000002000000020000000300000003000000040000000400000005000000
+  _settings: {fileID: 11400000, guid: c2a180a4831409846af0d35ac6213da5, type: 2}
   _rewardText: {fileID: 13404588}
   _finalRewardText: {fileID: 1258318040}
 --- !u!4 &691804701
@@ -740,6 +740,31 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 691804700}
         m_MethodName: OnStepFail
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1889263653}
+        m_MethodName: OnFailStep
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  GameCompleted:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 691804700}
+        m_MethodName: OnGameCompleted
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

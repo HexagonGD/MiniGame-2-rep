@@ -12,28 +12,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b5282bcf1db6dc4c8d9f6f9ef1db7c1, type: 3}
   m_Name: StandartSettings
   m_EditorClassIdentifier: 
-  _speedGraphic:
-  - 20
-  - 24
-  - 28
-  - 32
-  - 36
-  - 40
-  - 44
-  - 48
-  - 52
-  - 56
-  - 60
-  _holeGraphic:
-  - 47
-  - 45
-  - 43
-  - 41
-  - 39
-  - 37
-  - 35
-  - 33
-  - 31
-  - 29
-  - 27
-  _maxStep: 10
+  _stepsSettings:
+  - _speed: 30
+    _hole: 47
+    _reward: 0
+  - _speed: 30
+    _hole: 47
+    _reward: 1
+  - _speed: 30
+    _hole: 47
+    _reward: 1
+  - _speed: 30
+    _hole: 47
+    _reward: 1
+  - _speed: 30
+    _hole: 47
+    _reward: 2
+  - _speed: 30
+    _hole: 40
+    _reward: 2
+  - _speed: 30
+    _hole: 40
+    _reward: 3
+  - _speed: 0
+    _hole: 40
+    _reward: 3
+  - _speed: 30
+    _hole: 40
+    _reward: 4
+  - _speed: 30
+    _hole: 40
+    _reward: 4
+  _finalReward: 5

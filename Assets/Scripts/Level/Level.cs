@@ -13,6 +13,7 @@ public class Level : MonoBehaviour
 
     [SerializeField] private UnityEvent LevelStepCompleted;
     [SerializeField] private UnityEvent LevelFailed;
+    [SerializeField] private UnityEvent GameCompleted;
 
     private event Action<float> SpeedChanged;
     private event Action<float> HoleChanged;
@@ -57,10 +58,9 @@ public class Level : MonoBehaviour
 
     private IEnumerator LevelStepComplete()
     {
-        if(++_step > _settings.MaxStep)
+        if(++_step >= _settings.MaxStep)
         {
-            LevelStepCompleted?.Invoke();
-            StartCoroutine(LevelStepFail());
+            GameCompleted?.Invoke();
             yield break;
         }
 
